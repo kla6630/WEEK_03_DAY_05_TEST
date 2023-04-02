@@ -9,11 +9,9 @@ public class JpaUtil {
 
 	static {
 		try {
-			entityManagerFactory = Persistence
-					.createEntityManagerFactory("w3_d5_test");
+			entityManagerFactory = Persistence.createEntityManagerFactory("w3_d5_test");
 		} catch (Throwable ex) {
-			System.err.println("Initial EntityManagerFactory creation failed."
-					+ ex);
+			System.err.println("Initial EntityManagerFactory creation failed." + ex);
 			throw new ExceptionInInitializerError(ex);
 		}
 	}
